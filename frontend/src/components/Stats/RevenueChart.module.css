@@ -1,0 +1,85 @@
+.wrapper {
+    margin-bottom: 30px;
+}
+
+.header {
+    margin-bottom: 12px;
+}
+
+.header h3 {
+    margin-bottom: 12px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.modeSwitch {
+    display: flex;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modeSwitch button {
+    padding: 6px 16px;
+    background: white;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    cursor: pointer;
+    color: #495057;
+}
+
+.modeSwitch button.active {
+    background: #0d6efd;
+    color: white;
+}
+
+.select {
+    padding: 6px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.total {
+    font-size: 14px;
+    color: #495057;
+    margin-left: auto;
+}
+
+.total strong {
+    color: #198754;
+    font-size: 16px;
+}
+
+.container {
+    height: 300px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.emptyState {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        gap: 8px;
+    }
+    .total {
+        margin-left: 0;
+    }
+}

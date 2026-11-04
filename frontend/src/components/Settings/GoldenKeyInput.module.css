@@ -1,0 +1,85 @@
+.container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.container h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #212529;
+}
+
+.description {
+    color: #6c757d;
+    font-size: 14px;
+    margin: 0 0 16px 0;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.input {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.button {
+    padding: 12px 30px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+}
+
+.button:disabled {
+    background: #6c757d;
+    cursor: wait;
+}
+
+@media (max-width: 768px) {
+    .inputGroup {
+        flex-direction: column;
+    }
+
+    .input {
+        min-width: unset;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
